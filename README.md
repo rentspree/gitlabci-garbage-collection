@@ -12,14 +12,14 @@ git clone https://github.com/rentspree/gitlabci-garbage-collection.git
 ```bash
 sh main.sh
 ```
-The docker container run as **rentspree-gc** name
+The docker container run as **rentspree-gc** name. By default, Cron Jobs will execute every day at **00:00 am**. You can change default Cron Jobs in config/config.json.
 
 ### Monitor Cron Jobs
 ```bash
 docker logs -f rentspree-gc
 ```
 
-### Config Period for cleanup
+### Config Period to cleanup
 By default, will not remove a image if it exited less than 604800 seconds (1 week) ago. You can change default config in config/config.json file with **GRACE_PERIOD_SECONDS** environment.
 
 ## License 
