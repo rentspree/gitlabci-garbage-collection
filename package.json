@@ -4,8 +4,7 @@
   "description": "Gitlab CI Docker Garbage Collector script",
   "main": "main.sh",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sh main.sh"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
