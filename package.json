@@ -2,9 +2,10 @@
   "name": "@rentspree/gitlabci-garbage-collection",
   "version": "1.0.0",
   "description": "Gitlab CI Docker Garbage Collector script",
-  "main": "index.js",
+  "main": "main.sh",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sh main.sh"
   },
   "repository": {
     "type": "git",

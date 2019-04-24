@@ -1,0 +1,14 @@
+[
+    {
+      "comment": "Rus as root",
+      "schedule": "0 0 1 1 *",
+      "command": "su -l root",
+      "onstart": true
+    },
+    {
+        "comment": "Execute Docker Garbage Collection",
+        "schedule": "* * * * *",
+        "command": "docker run --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock:ro -v /etc:/etc:ro -e GRACE_PERIOD_SECONDS=86400 -e FORCE_IMAGE_REMOVAL=1 spotify/docker-gc",
+        "onstart": true
+    }
+]
