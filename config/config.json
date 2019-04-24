@@ -1,6 +1,6 @@
 [
     {
-      "comment": "Rus as root",
+      "comment": "Run shell script as root",
       "schedule": "0 0 1 1 *",
       "command": "su -l root",
       "onstart": true

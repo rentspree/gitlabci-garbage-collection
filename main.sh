@@ -1,8 +1,10 @@
 echo "=====>>> Execute Garbage Collection Script Running <<<=====" &&
 
 echo "=====>>> Clone Repository Running <<<=====" &&
-sudo wget https://github.com/rentspree/gitlabci-garbage-collection.git &&
+sudo git clone https://github.com/rentspree/gitlabci-garbage-collection.git &&
 echo "=====>>> Clone Repository Complete <<<=====" &&
+
+cd gitlabci-garbage-collection
 
 echo "=====>>> Start Garbage Collection with Crontab Running <<<=====" &&
 sudo docker run --rm --privileged -d \
