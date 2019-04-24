@@ -12,7 +12,7 @@ git clone https://github.com/rentspree/gitlabci-garbage-collection.git
 ```bash
 sh main.sh
 ```
-The docker container run as **rentspree-gc** name. By default, Cron Jobs will execute every day at **00:00 am**. You can change default Cron Jobs in config/config.json.
+The docker container run as **rentspree-gc** name. By default, Cron Jobs will execute every day at midnight. You can change default Cron Jobs in config/config.json.
 
 ### Monitor Cron Jobs
 ```bash
