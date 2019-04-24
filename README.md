@@ -16,10 +16,13 @@ The docker container run as **rentspree-gc** name
 
 ### Monitor Cron Jobs
 ```bash
-docker logs rentspree-gc
+docker logs -f rentspree-gc
 ```
 
-## License
+### Config Period to cleanup
+By default, will not remove a image if it exited less than 604800 seconds (1 week) ago. You can change default config in config/config.json file with **GRACE_PERIOD_SECONDS** environment.
+
+## License 
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
 
