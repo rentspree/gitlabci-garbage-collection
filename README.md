@@ -19,7 +19,7 @@ The docker container run as **rentspree-gc** name
 docker logs -f rentspree-gc
 ```
 
-### Config Period to cleanup
+### Config Period for cleanup
 By default, will not remove a image if it exited less than 604800 seconds (1 week) ago. You can change default config in config/config.json file with **GRACE_PERIOD_SECONDS** environment.
 
 ## License 
